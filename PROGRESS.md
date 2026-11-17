@@ -98,10 +98,12 @@ codexion/
   - [x] Definición del header `codexion.h` y modularización de archivos en `coders/src/`.
   - [x] Configuración del `Makefile` con flags `-Wall -Wextra -Werror -pthread`.
 
-- [ ] **Fase 2: Parseo y Validación de Argumentos (`parsing.c`)**
-  - [ ] Comprobar exactamente 8 argumentos.
-  - [ ] Validación de enteros positivos/no negativos y límites de desbordamiento.
-  - [ ] Validación exacta de `"fifo"` o `"edf"`.
+- [x] **Fase 2: Parseo y Validación de Argumentos (`parsing.c`)**
+  - [x] Comprobar exactamente 8 argumentos (`argc == 9`).
+  - [x] Validación de enteros positivos/no negativos y límites de desbordamiento (inmune a overflow).
+  - [x] Validación exacta de `"fifo"` o `"edf"` (`POLICY_FIFO` / `POLICY_EDF`).
+  - [x] Documentación exhaustiva en `EXPLICACION_PARSEO.md`.
+  - [x] Verificado al 100% con `norminette` y batería de pruebas automatizada.
 
 - [ ] **Fase 3: Estructuras de Datos y Min-Heap (`heap.c`)**
   - [ ] Funciones `heap_init`, `heap_push`, `heap_pop`, `heap_peek`, `heap_destroy`.

@@ -6,7 +6,7 @@
 /*   By: ripaparo <ripaparo@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 13:26:45 by ripaparo          #+#    #+#             */
-/*   Updated: 2026/08/11 16:53:27 by ripaparo         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:45:00 by ripaparo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 int	main(int argc, char *argv[])
 {
-    if (argc == 7)
-	    parsing(argv);
-    else
-        printf("error");
+	t_config	config;
+
+	if (parse_args(&config, argc, argv) != 0)
+		return (1);
+	return (0);
 }

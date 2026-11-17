@@ -22,8 +22,8 @@
 
 typedef enum e_sched
 {
-	SCHED_FIFO,
-	SCHED_EDF
+	POLICY_FIFO,
+	POLICY_EDF
 }	t_sched;
 
 typedef struct s_config
